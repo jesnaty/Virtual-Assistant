@@ -529,6 +529,156 @@ export default function VirtualAssistantPortfolio() {
             </div>
           </section>
 
+          {/* Certifications Section */}
+          <section id="certifications" className="py-20 bg-transparent">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                className="text-center mb-16"
+              >
+                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Certifications</h2>
+                <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+                  Recognitions and credentials that demonstrate my expertise and commitment to professional growth.
+                </p>
+              </motion.div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {[
+                  {
+                    image: "/images/alx.png",
+                    title: "Virtual Assistant Certification",
+                    issuer: "ALX Ethiopia",
+                    date: "2024",
+                    link: "#"
+                  },
+                  {
+                    image: "/images/adama.png",
+                    title: "BSc in Software Engineering",
+                    issuer: "Adama Science and Technology University",
+                    date: "2023",
+                    link: "#"
+                  },
+                  {
+                    image: "/images/google.png",
+                    title: "Digital Marketing Certificate",
+                    issuer: "Google",
+                    date: "2023",
+                    link: "#"
+                  },
+                  {
+                    image: "/images/derja.png",
+                    title: "Soft Skills & Career Guidance",
+                    issuer: "Derja Academy",
+                    date: "2023",
+                    link: "#"
+                  },
+                  {
+                    image: "/images/alison.png",
+                    title: "Email Marketing Certificate",
+                    issuer: "Alison",
+                    date: "2023",
+                    link: "#"
+                  },
+                  {
+                    image: "/images/edi.png",
+                    title: "Entrepreneurship Certificate",
+                    issuer: "EDI Ethiopia",
+                    date: "2023",
+                    link: "#"
+                  }
+                ].map((cert, index) => (
+                  <motion.a
+                    key={index}
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ y: -5 }}
+                    className="block"
+                  >
+                    <Card className="h-full hover:shadow-xl transition-shadow duration-300 bg-slate-700 border-slate-600">
+                      <CardContent className="p-6 flex flex-col items-center">
+                        <img
+                          src={cert.image}
+                          alt={cert.title}
+                          className="h-14 object-contain mb-4 bg-white rounded-md"
+                          style={{ maxWidth: '120px' }}
+                        />
+                        <h3 className="text-2xl font-bold text-white mb-2 text-center">{cert.title}</h3>
+                        <p className="text-slate-300 mb-1 text-center">{cert.issuer}</p>
+                        <p className="text-slate-400 text-sm text-center">{cert.date}</p>
+                      </CardContent>
+                    </Card>
+                  </motion.a>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Hobbies Section */}
+          <section id="hobbies" className="py-20 bg-transparent">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                className="text-center mb-16"
+              >
+                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Hobbies</h2>
+                <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+                  Activities I enjoy in my free time.
+                </p>
+              </motion.div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {[
+                  {
+                    image: "/images/events.png",
+                    title: "Events",
+                    description: "I love organizing and participating in community and professional events."
+                  },
+                  {
+                    image: "/images/swimming.png",
+                    title: "Swimming",
+                    description: "Swimming helps me relax, stay healthy, and clear my mind."
+                  },
+                  {
+                    image: "/images/books.png",
+                    title: "Books",
+                    description: "Reading books broadens my perspective and inspires creativity."
+                  }
+                ].map((hobby, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ y: -5 }}
+                    className="block"
+                  >
+                    <Card className="h-full hover:shadow-xl transition-shadow duration-300 bg-slate-700 border-slate-600">
+                      <CardContent className="p-6 flex flex-col items-center">
+                        <img
+                          src={hobby.image}
+                          alt={hobby.title}
+                          className="h-32 object-cover mb-4 rounded-md"
+                          style={{ maxWidth: '180px' }}
+                        />
+                        <h3 className="text-2xl font-bold text-white mb-2 text-center">{hobby.title}</h3>
+                        <p className="text-slate-300 text-center">{hobby.description}</p>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+
           {/* Testimonials Section */}
           <section id="testimonials" className="py-20 bg-transparent">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
