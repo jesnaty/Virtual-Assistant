@@ -557,7 +557,7 @@ export default function VirtualAssistantPortfolio() {
                     image: "/images/adama.png",
                     title: "BSc in Software Engineering",
                     issuer: "Adama Science and Technology University",
-                    date: "2023",
+                    date: "2025",
                     link: "#"
                   },
                   {
@@ -571,21 +571,21 @@ export default function VirtualAssistantPortfolio() {
                     image: "/images/derja.png",
                     title: "Soft Skills & Career Guidance",
                     issuer: "Derja Academy",
-                    date: "2023",
+                    date: "2024",
                     link: "#"
                   },
                   {
                     image: "/images/alison.png",
                     title: "Email Marketing Certificate",
                     issuer: "Alison",
-                    date: "2023",
+                    date: "2024",
                     link: "#"
                   },
                   {
                     image: "/images/edi.png",
                     title: "Entrepreneurship Certificate",
                     issuer: "EDI Ethiopia",
-                    date: "2023",
+                    date: "2024",
                     link: "#"
                   }
                 ].map((cert, index) => (
