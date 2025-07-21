@@ -1046,6 +1046,14 @@ export default function VirtualAssistantPortfolio() {
                     Schedule a Free Consultation
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
+                  <a
+                    href="/Virtual%20Assistant.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 border border-slate-400 text-slate-300 hover:bg-slate-800 bg-transparent"
+                  >
+                    Download My CV
+                  </a>
                 </motion.div>
               </motion.div>
             </div>
