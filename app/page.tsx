@@ -20,6 +20,9 @@ import {
   Play,
   Pause,
   RotateCcw,
+  BookOpen,
+  ShowerHeadIcon as Swimmer,
+  Megaphone,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -204,6 +207,54 @@ export default function VirtualAssistantPortfolio() {
     },
   ]
 
+  const certifications = [
+    {
+      image: "/images/certifications/adama.png",
+      title: "Software Engineering Degree - Adama Science and Technology University",
+    },
+    {
+      image: "/images/certifications/alx.png",
+      title: "Virtual Assistant - ALX",
+    },
+    {
+      image: "/images/certifications/google.png",
+      title: "Digital Marketing - Google",
+    },
+    {
+      image: "/images/certifications/alison.png",
+      title: "Email Marketing - Allison",
+    },
+    {
+      image: "/images/certifications/dereja.png",
+      title: "Soft Skill and Career Guidance - Derja Academy",
+    },
+    {
+      image: "/images/certifications/edi-ethiopia.png",
+      title: "Entrepreneurship - EDI",
+    },
+  ]
+
+  const hobbies = [
+    {
+      icon: <Megaphone className="w-8 h-8" />,
+      image: "/images/events.jpeg",
+      title: "Events",
+      description: "Engaging with communities and learning from diverse perspectives at various events.",
+    },
+    {
+      icon: <Swimmer className="w-8 h-8" />,
+      image: "/images/swimming.jpeg",
+      title: "Swimming",
+      description: "Staying active and refreshed with regular swimming sessions.",
+    },
+    {
+      icon: <BookOpen className="w-8 h-8" />,
+      image: "/images/book.jpeg",
+      title: "Books",
+      description: "Expanding knowledge and gaining new insights through reading a variety of books.",
+    },
+  ]
+
   const stats = [
     { number: "5+", label: "Projects Completed" },
     { number: "98%", label: "Client Satisfaction" },
@@ -219,6 +270,26 @@ export default function VirtualAssistantPortfolio() {
         </div>
       ) : (
         <div className="min-h-screen bg-subtle-gradient-animated">
+          {/* Intro Video Section (very top) */}
+          <section id="intro" className="pt-16 pb-6 px-4 sm:px-6 lg:px-8 text-white">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">Video Introduction</h2>
+              <div className="rounded-2xl overflow-hidden border-8 border-transparent bg-gradient-to-r from-blue-500 to-purple-500 p-2">
+                <div className="relative w-full h-0 pt-[56.25%] rounded-xl overflow-hidden">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/uF5Exr2fPnQ?rel=0&modestbranding=1"
+                    title="Introduction video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    loading="lazy"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
           {/* Hero Section */}
           <section id="home" className="pt-16 py-16 px-4 sm:px-6 lg:px-8 text-white">
             <div className="max-w-7xl mx-auto">
@@ -229,12 +300,15 @@ export default function VirtualAssistantPortfolio() {
                   transition={{ duration: 0.8 }}
                   className="relative"
                 >
-                  <div className="w-80 h-80 mx-auto rounded-full overflow-hidden border-8 border-gradient-to-r from-blue-500 to-purple-500 shadow-2xl bg-gradient-to-r from-blue-500 to-purple-500 p-2">
-                    <div className="w-full h-full rounded-full overflow-hidden">
-                      <img
-                        src="/profile-photo.jpeg"
-                        alt="Virtual Assistant Profile"
-                        className="w-full h-full object-cover"
+                  <div className="w-full max-w-3xl mx-auto rounded-2xl overflow-hidden border-8 border-gradient-to-r from-blue-500 to-purple-500 shadow-2xl bg-gradient-to-r from-blue-500 to-purple-500 p-2">
+                    <div className="relative w-full h-0 pt-[56.25%] rounded-xl overflow-hidden">
+                      <iframe
+                        className="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/uF5Exr2fPnQ"
+                        title="Introduction video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
                       />
                     </div>
                   </div>
@@ -339,15 +413,15 @@ export default function VirtualAssistantPortfolio() {
                   <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">About Me</h2>
 
                   <p className="text-lg text-slate-300 mb-6">
-                    With over one year of experience in virtual assistance, I, **Natnael Ayele**, specialize in helping
-                    busy entrepreneurs and growing businesses streamline their operations. My mission is to provide
-                    reliable, professional support that allows you to focus on scaling your business.
+                    I'm Natnael Ayele, a virtual assistant with over one year of experience helping busy entrepreneurs
+                    and growing businesses streamline their operations. I combine precision, speed, and clear
+                    communication to free up your time and unlock momentum.
                   </p>
 
                   <p className="text-lg text-slate-300 mb-8">
-                    I pride myself on attention to detail, proactive communication, and delivering results that exceed
-                    expectations. Whether you need ongoing support or project-based assistance, I'm here to help you
-                    succeed.
+                    From email management and calendar optimization to research, reporting, and client support, I deliver
+                    reliable, professional outcomes you can count on. Whether you need ongoing support or a one-off
+                    project, let's make your next week lighter and your goals closer.
                   </p>
 
                   <div className="grid grid-cols-2 gap-6">
@@ -538,83 +612,33 @@ export default function VirtualAssistantPortfolio() {
                 viewport={{ once: true }}
                 className="text-center mb-16"
               >
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Certifications</h2>
+                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">My Certifications</h2>
                 <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-                  Recognitions and credentials that demonstrate my expertise and commitment to professional growth.
+                  Showcasing my commitment to continuous learning and professional development.
                 </p>
               </motion.div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  {
-                    image: "/images/alx.png",
-                    title: "Virtual Assistant Certification",
-                    issuer: "ALX Ethiopia",
-                    date: "2024",
-                    link: "#"
-                  },
-                  {
-                    image: "/images/adama.png",
-                    title: "BSc in Software Engineering",
-                    issuer: "Adama Science and Technology University",
-                    date: "2025",
-                    link: "#"
-                  },
-                  {
-                    image: "/images/google.png",
-                    title: "Digital Marketing Certificate",
-                    issuer: "Google",
-                    date: "2023",
-                    link: "#"
-                  },
-                  {
-                    image: "/images/derja.png",
-                    title: "Soft Skills & Career Guidance",
-                    issuer: "Derja Academy",
-                    date: "2024",
-                    link: "#"
-                  },
-                  {
-                    image: "/images/alison.png",
-                    title: "Email Marketing Certificate",
-                    issuer: "Alison",
-                    date: "2024",
-                    link: "#"
-                  },
-                  {
-                    image: "/images/edi.png",
-                    title: "Entrepreneurship Certificate",
-                    issuer: "EDI Ethiopia",
-                    date: "2024",
-                    link: "#"
-                  }
-                ].map((cert, index) => (
-                  <motion.a
+                {certifications.map((cert, index) => (
+                  <motion.div
                     key={index}
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     initial={{ opacity: 0, y: 20, scale: 0.95 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
                     whileHover={{ y: -5 }}
-                    className="block"
                   >
                     <Card className="h-full hover:shadow-xl transition-shadow duration-300 bg-slate-700 border-slate-600">
-                      <CardContent className="p-6 flex flex-col items-center">
+                      <CardContent className="p-6 flex flex-col items-center text-center">
                         <img
-                          src={cert.image}
-                          alt={cert.title}
-                          className="h-14 object-contain mb-4 bg-white rounded-md"
-                          style={{ maxWidth: '120px' }}
+                          src={cert.image || "/placeholder.svg"}
+                          alt={`${cert.title} logo`}
+                          className="w-24 h-24 object-contain mb-4 rounded-full"
                         />
-                        <h3 className="text-2xl font-bold text-white mb-2 text-center">{cert.title}</h3>
-                        <p className="text-slate-300 mb-1 text-center">{cert.issuer}</p>
-                        <p className="text-slate-400 text-sm text-center">{cert.date}</p>
+                        <h3 className="text-xl font-bold text-white">{cert.title}</h3>
                       </CardContent>
                     </Card>
-                  </motion.a>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -629,29 +653,12 @@ export default function VirtualAssistantPortfolio() {
                 viewport={{ once: true }}
                 className="text-center mb-16"
               >
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Hobbies</h2>
-                <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-                  Activities I enjoy in my free time.
-                </p>
+                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">My Hobbies & Interests</h2>
+                <p className="text-xl text-slate-300 max-w-3xl mx-auto">A glimpse into what I enjoy outside of work.</p>
               </motion.div>
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  {
-                    image: "/images/events.png",
-                    title: "Events",
-                    description: "I love organizing and participating in community and professional events."
-                  },
-                  {
-                    image: "/images/swimming.png",
-                    title: "Swimming",
-                    description: "Swimming helps me relax, stay healthy, and clear my mind."
-                  },
-                  {
-                    image: "/images/books.png",
-                    title: "Books",
-                    description: "Reading books broadens my perspective and inspires creativity."
-                  }
-                ].map((hobby, index) => (
+                {hobbies.map((hobby, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20, scale: 0.95 }}
@@ -659,18 +666,23 @@ export default function VirtualAssistantPortfolio() {
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
                     whileHover={{ y: -5 }}
-                    className="block"
                   >
                     <Card className="h-full hover:shadow-xl transition-shadow duration-300 bg-slate-700 border-slate-600">
-                      <CardContent className="p-6 flex flex-col items-center">
-                        <img
-                          src={hobby.image}
-                          alt={hobby.title}
-                          className="h-32 object-cover mb-4 rounded-md"
-                          style={{ maxWidth: '180px' }}
-                        />
-                        <h3 className="text-2xl font-bold text-white mb-2 text-center">{hobby.title}</h3>
-                        <p className="text-slate-300 text-center">{hobby.description}</p>
+                      <CardContent className="p-6">
+                        <div className="w-full h-48 overflow-hidden rounded-md mb-4">
+                          <img
+                            src={hobby.image || "/placeholder.svg"}
+                            alt={hobby.title}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="flex items-center mb-2">
+                          <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white mr-4">
+                            {hobby.icon}
+                          </div>
+                          <h3 className="text-2xl font-bold text-white">{hobby.title}</h3>
+                        </div>
+                        <p className="text-slate-300">{hobby.description}</p>
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -1045,14 +1057,6 @@ export default function VirtualAssistantPortfolio() {
                   >
                     Schedule a Free Consultation
                     <ArrowRight className="ml-2 w-5 h-5" />
-                  </a>
-                  <a
-                    href="/Virtual%20Assistant.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 border border-slate-400 text-slate-300 hover:bg-slate-800 bg-transparent"
-                  >
-                    Download My CV
                   </a>
                 </motion.div>
               </motion.div>
