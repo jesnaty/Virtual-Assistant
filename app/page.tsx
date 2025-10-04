@@ -106,83 +106,90 @@ export default function VirtualAssistantPortfolio() {
   const services = [
     {
       icon: <Mail className="w-8 h-8" />,
-      title: "Email Management",
-      description:
-        "Professional email handling, organization, and response management to keep your inbox clean and efficient.",
-      features: ["Email sorting & filtering", "Response templates", "Follow-up tracking"],
+      title: "Administrative & Business Support",
+      description: "Comprehensive administrative support to keep your business running smoothly.",
+      features: ["Data Entry & Research", "Calendar & Email Management", "File Organization & Conversions", "Appointment Scheduling & Follow-ups", "Invoicing & Reporting"],
     },
     {
       icon: <Calendar className="w-8 h-8" />,
-      title: "Calendar Management",
-      description: "Seamless scheduling, appointment coordination, and calendar optimization for maximum productivity.",
-      features: ["Meeting scheduling", "Calendar optimization", "Reminder systems"],
+      title: "Project & Operations Management",
+      description: "Streamlined project management and operational support for better efficiency.",
+      features: ["Task Tracking & Timeline Monitoring", "SOP & Workflow Creation", "Team Coordination & Communication", "Quality & Risk Management"],
     },
     {
       icon: <FileText className="w-8 h-8" />,
-      title: "Content Creation",
-      description: "High-quality content writing, editing, and management for your business communications.",
-      features: ["Blog writing", "Social media content", "Document editing"],
+      title: "Digital Marketing & Automation",
+      description: "Complete digital marketing solutions with automation for scalable growth.",
+      features: ["Email Campaign Setup (Mailchimp, Klaviyo, ActiveCampaign)", "Lead Generation & Nurturing (LinkedIn, Apollo, Hunter.io)", "CRM Setup & Automation (HubSpot, Zoho, GoHighLevel)", "Pipeline Cleanup & Optimization", "Marketing Automation (Email, CRM, Ads, Social Media)", "Ads Setup & Performance Monitoring (Meta Ads, Google Ads)"],
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
-      title: "Data Management",
-      description: "Accurate data entry, analysis, and reporting to help you make informed business decisions.",
-      features: ["Data entry", "Report generation", "Database management"],
-    },
-    {
-      icon: <MessageSquare className="w-8 h-8" />,
-      title: "Customer Support",
-      description: "Professional customer service and support to maintain excellent client relationships.",
-      features: ["Live chat support", "Ticket management", "Customer follow-up"],
-    },
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Research & Analysis",
-      description: "Comprehensive market research, competitor analysis, and business intelligence gathering.",
-      features: ["Market research", "Competitor analysis", "Lead generation"],
+      title: "Creative & Tech Support",
+      description: "Professional creative and technical support for your business needs.",
+      features: ["Graphic Design (Canva, Photoshop)", "Video Editing (CapCut, Adobe Premiere Pro)", "Website Support (Wix, WordPress, Shopify)"],
     },
   ]
 
   const projects = [
     {
-      image: "/images/project-crm-data-entry.png",
-      title: "01_CRM Data Entry - Smart Contacts Upload",
+      image: "/images/Email/email.JPG",
+      title: "Gmail Inbox Organization & Labeling",
       description:
-        "Cleaned and organized product data for an online retail platform, improving search accuracy and customer experience.",
-      link: "https://drive.google.com/drive/folders/1oMysQrPH78If4irKd5FzUp2_NSzpGdVK?usp=drive_link",
+        "I structured a Gmail inbox using custom labels, tabs, and filters to categorize emails by topic, priority, and source. This setup streamlined communication, reduced clutter, and enabled faster access to business-critical messages.",
+      link: "https://drive.google.com/drive/folders/1W8OmD08Q3o0ThMQwK_a9l4rX5A3feHZK?usp=drive_link",
     },
     {
-      image: "/images/project-web-research.png",
-      title: "02_Web Research - SaaS Startups in Africa",
-      description: "Developed and managed a comprehensive content calendar for a startup, boosting engagement by 20%.",
-      link: "https://drive.google.com/drive/folders/1fx1PsySmgI2NcuYKJQztBMI3BPlhk-fQ?usp=drive_link",
+      image: "/images/SalesNav/SalesNavigator.jpg",
+      title: "Sales Navigator – B2B Lead Generation & Outreach",
+      description: "Sourced 50 high-quality B2B leads using LinkedIn Sales Navigator with filters based on client ICP (industry, company size, location, and title). Exported data to Excel and created 3 personalized outreach message templates.",
+      link: "https://drive.google.com/drive/folders/1Ow-pPWqSVDXTDMyZK_v-Le5SDuQn1LDz?usp=drive_link",
     },
     {
-      image: "/images/project-data-cleaning.png",
-      title: "03_Data Cleaning & Formatting - Excel Cleanup",
+      image: "/images/GoogleWorkspace/Google workspace.JPG",
+      title: "Google Workspace Forms, Slides & Workflow Setup",
       description:
-        "Automated client onboarding workflows, reducing manual effort by 40% and improving client satisfaction.",
-      link: "https://drive.google.com/drive/folders/11-v9InFnIPSqAi0mK0-Yl_FHYjXs-NTw?usp=drive_link",
+        "I designed and implemented Google Forms for data collection, Google Slides for client presentations, and integrated these tools into broader workflows using Google Workspace. This setup enhanced usability, reduced manual effort, and supported scalable client-facing systems.",
+      link: "https://drive.google.com/drive/folders/1nfon4E24ygnbrb3VFzwnp179MelU5NMG?usp=drive_link",
     },
     {
       image: "/images/project-lead-generation.png",
-      title: "04_Lead Generation - Real Estate USA",
+      title: "Lead Generation - Real Estate USA",
       description: "Conducted in-depth market research and compiled a detailed report for a new product launch.",
       link: "https://drive.google.com/drive/folders/1D08HzlQRSDCgRRfZCh8N-rHvob9tSRRP?usp=drive_link",
     },
     {
       image: "/images/project-excel-reporting.png",
-      title: "05_Excel Reporting - Sales Dashboard",
+      title: "Excel Reporting - Sales Dashboard",
       description:
         "Managed logistics and attendee communication for a successful virtual conference, ensuring smooth execution.",
       link: "https://drive.google.com/drive/folders/1c-_d_2mo7SV128ga4jk7-_TiDe9zu78x?usp=drive_link",
     },
     {
-      image: "/images/project-pdf-to-excel.png",
-      title: "06_PDF to Excel - Invoice Conversion",
+      image: "/images/ProjectManagement/1. agile - notion.JPG",
+      title: "Business Project Management Systems",
       description:
-        "Optimized a client's CRM database, improving data integrity and enabling more effective customer segmentation.",
-      link: "https://drive.google.com/drive/folders/17oz1dbhwEkvwd0dqrMGA-qs38m36tni6?usp=drive_link",
+        "I designed and implemented structured project management systems using Notion, Trello, and monday.com to support business operations. Each platform was customized to organize tasks by phase, assign team roles, track progress, and visualize timelines.",
+      link: "https://drive.google.com/drive/folders/1RIIgxndLVmkZVXQe_ER7Z8Yx38MkvCX0?usp=drive_link",
+    },
+    {
+      image: "/images/Klaviyo/klaviyo.JPG",
+      title: "Klaviyo Workflow – Automated Welcome Series for New Subscribers",
+      description:
+        "I built a multi-step welcome series in Klaviyo to automate subscriber engagement for Theday Digital. The flow included timed email sequences triggered by list sign-up, designed to deliver onboarding messages, collect feedback, and drive social media follow-through.",
+      link: "https://drive.google.com/drive/folders/120PlLvtjtwrh78UuttKxYDEmJJwyrJwe?usp=drive_link",
+    },
+    {
+      image: "/images/TravelManagement/Travel Managemnt Service.JPG",
+      title: "Travel Management & Booking Support",
+      description: "This project involved managing international travel logistics, including flight research, price comparison, booking optimization, and itinerary documentation. I used platforms like KAYAK to filter options, secure cost-effective deals, and coordinate round-trip flights with baggage and discount configurations.",
+      link: "https://drive.google.com/drive/folders/17kPeCk7z9lBXmEAx44FdB0EHiGYpahMX?usp=drive_link",
+    },
+    {
+      image: "/images/PipedriveCRM/pipdrive.webp",
+      title: "Pipedrive CRM Setup & Workflow Automation",
+      description:
+        "Configured Pipedrive for lead tracking, deal stages, and team visibility. Automated pipeline actions using custom filters, labels, and integrations with Google Workspace. Delivered a clean, scalable CRM system with documentation for client onboarding and sales reporting.",
+      link: "#",
     },
   ]
 
@@ -518,7 +525,7 @@ export default function VirtualAssistantPortfolio() {
                 </p>
               </motion.div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {services.map((service, index) => (
                   <motion.div
                     key={index}
@@ -736,272 +743,6 @@ export default function VirtualAssistantPortfolio() {
             </div>
           </section>
 
-          {/* Interactive Tools Section */}
-          <section id="tools" className="py-20 bg-transparent">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true }}
-                className="text-center mb-16"
-              >
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Try These Productivity Tools</h2>
-                <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-                  Experience the kind of tools and efficiency I bring to your business
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* Productivity Calculator */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -5 }}
-                >
-                  <Card className="bg-slate-700 border-slate-600 h-full">
-                    <CardHeader>
-                      <CardTitle className="text-white flex items-center">
-                        <Calculator className="w-6 h-6 mr-2 text-blue-400" />
-                        Productivity Calculator
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <div>
-                        <Label htmlFor="emails" className="text-slate-300">
-                          Daily Emails
-                        </Label>
-                        <Input
-                          id="emails"
-                          type="number"
-                          placeholder="e.g., 50"
-                          value={emailCount}
-                          onChange={(e) => setEmailCount(e.target.value)}
-                          className="bg-slate-800 border-slate-600 text-white"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="time" className="text-slate-300">
-                          Hours Spent on Admin
-                        </Label>
-                        <Input
-                          id="time"
-                          type="number"
-                          step="0.5"
-                          placeholder="e.g., 3.5"
-                          value={timeSpent}
-                          onChange={(e) => setTimeSpent(e.target.value)}
-                          className="bg-slate-800 border-slate-600 text-white"
-                        />
-                      </div>
-                      <Button onClick={calculateSavings} className="w-full bg-blue-600 hover:bg-blue-700">
-                        Calculate Savings
-                      </Button>
-                      {calculatedSavings > 0 && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          className="text-center p-4 bg-green-600/20 rounded-lg border border-green-600/30"
-                        >
-                          <p className="text-green-400 font-bold text-2xl">${calculatedSavings}/month</p>
-                          <p className="text-slate-300 text-sm">Potential savings with VA help</p>
-                        </motion.div>
-                      )}
-                    </CardContent>
-                  </Card>
-                </motion.div>
-
-                {/* Pomodoro Timer */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 }}
-                  whileHover={{ y: -5 }}
-                >
-                  <Card className="bg-slate-700 border-slate-600 h-full">
-                    <CardHeader>
-                      <CardTitle className="text-white flex items-center">
-                        <Timer className="w-6 h-6 mr-2 text-purple-400" />
-                        Pomodoro Timer
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4 text-center">
-                      <div className="text-6xl font-bold text-white">{formatTime(pomodoroTime)}</div>
-                      <p className="text-slate-300">{isBreak ? "Break Time!" : "Focus Time"}</p>
-                      <div className="flex gap-2 justify-center">
-                        <Button onClick={() => setIsRunning(!isRunning)} className="bg-green-600 hover:bg-green-700">
-                          {isRunning ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-                        </Button>
-                        <Button
-                          onClick={() => {
-                            setIsRunning(false)
-                            setPomodoroTime(25 * 60)
-                            setIsBreak(false)
-                          }}
-                          variant="outline"
-                          className="border-slate-400 text-slate-300 hover:bg-slate-800"
-                        >
-                          <RotateCcw className="w-4 h-4" />
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-
-                {/* Task Tracker */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2 }}
-                  whileHover={{ y: -5 }}
-                >
-                  <Card className="bg-slate-700 border-slate-600 h-full">
-                    <CardHeader>
-                      <CardTitle className="text-white flex items-center">
-                        <CheckCircle className="w-6 h-6 mr-2 text-green-400" />
-                        Task Tracker
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <div className="flex gap-2">
-                        <Input
-                          placeholder="Add a task..."
-                          value={newTask}
-                          onChange={(e) => setNewTask(e.target.value)}
-                          onKeyPress={(e) => e.key === "Enter" && addTask()}
-                          className="bg-slate-800 border-slate-600 text-white"
-                        />
-                        <Button onClick={addTask} className="bg-blue-600 hover:bg-blue-700">
-                          Add
-                        </Button>
-                      </div>
-                      <div className="space-y-2 max-h-40 overflow-y-auto">
-                        {tasks.map((task) => (
-                          <motion.div
-                            key={task.id}
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            className="flex items-center space-x-2"
-                          >
-                            <input
-                              type="checkbox"
-                              checked={task.completed}
-                              onChange={() => toggleTask(task.id)}
-                              className="rounded"
-                            />
-                            <span className={`text-slate-300 ${task.completed ? "line-through opacity-50" : ""}`}>
-                              {task.text}
-                            </span>
-                          </motion.div>
-                        ))}
-                      </div>
-                      <div className="text-sm text-slate-400">
-                        {tasks.filter((t) => t.completed).length} of {tasks.length} completed
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-
-                {/* Productivity Score */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3 }}
-                  whileHover={{ y: -5 }}
-                  className="md:col-span-2 lg:col-span-1"
-                >
-                  <Card className="bg-slate-700 border-slate-600 h-full">
-                    <CardHeader>
-                      <CardTitle className="text-white flex items-center">
-                        <BarChart3 className="w-6 h-6 mr-2 text-yellow-400" />
-                        Productivity Score
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <div className="text-center">
-                        <div className="text-4xl font-bold text-white mb-2">{productivityScore[0]}%</div>
-                        <p className="text-slate-300 text-sm">Current Efficiency</p>
-                      </div>
-                      <Slider
-                        value={productivityScore}
-                        onValueChange={setProductivityScore}
-                        max={100}
-                        step={1}
-                        className="w-full"
-                      />
-                      <div className="text-center">
-                        <p className="text-slate-300 text-sm">
-                          {productivityScore[0] < 30 && "Room for improvement"}
-                          {productivityScore[0] >= 30 && productivityScore[0] < 70 && "Good progress"}
-                          {productivityScore[0] >= 70 && "Excellent productivity!"}
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-
-                {/* Quick Tips */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4 }}
-                  whileHover={{ y: -5 }}
-                  className="md:col-span-2"
-                >
-                  <Card className="bg-slate-700 border-slate-600 h-full">
-                    <CardHeader>
-                      <CardTitle className="text-white flex items-center">
-                        <FileText className="w-6 h-6 mr-2 text-orange-400" />
-                        Productivity Tips
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div className="space-y-3">
-                          <div className="flex items-start space-x-2">
-                            <CheckCircle className="w-5 h-5 text-green-400 mt-0.5" />
-                            <div>
-                              <h4 className="text-white font-semibold">Email Batching</h4>
-                              <p className="text-slate-300 text-sm">
-                                Check emails 2-3 times daily instead of constantly
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex items-start space-x-2">
-                            <CheckCircle className="w-5 h-5 text-green-400 mt-0.5" />
-                            <div>
-                              <h4 className="text-white font-semibold">Time Blocking</h4>
-                              <p className="text-slate-300 text-sm">Dedicate specific hours to similar tasks</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="space-y-3">
-                          <div className="flex items-start space-x-2">
-                            <CheckCircle className="w-5 h-5 text-green-400 mt-0.5" />
-                            <div>
-                              <h4 className="text-white font-semibold">Delegate Admin</h4>
-                              <p className="text-slate-300 text-sm">Let a VA handle routine administrative tasks</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start space-x-2">
-                            <CheckCircle className="w-5 h-5 text-green-400 mt-0.5" />
-                            <div>
-                              <h4 className="text-white font-semibold">Focus Sessions</h4>
-                              <p className="text-slate-300 text-sm">Use 25-minute focused work periods</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              </div>
-            </div>
-          </section>
 
           {/* Contact Section */}
           <section id="contact" className="py-20 bg-transparent">
