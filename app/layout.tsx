@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "virtual assistant, VA, email management, calendar scheduling, content creation, administrative support, business productivity, natnael ayele, personal assistant, remote work, productivity tools",
   authors: [{ name: "Natnael Ayele" }],
   creator: "Natnael Ayele",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
     title: "Natnael Ayele - Professional Virtual Assistant",
     description: "Professional virtual assistant services to streamline your business operations",
